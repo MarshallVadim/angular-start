@@ -5,10 +5,16 @@ import { products } from '../products';
 @Component({
   selector: 'app-product-list',
   templateUrl: './product-list.component.html',
-  styleUrls: ['./product-list.component.css']
+  styleUrls: ['./product-list.component.css'],
+  template: `<p>ФИО: {{name}}</p>
+             <p>Возраст: {{age}}</p>
+             <p>Телефон: {{phone}}</p>`
 })
 export class ProductListComponent {
   products = products;
+  name = `Маршал Вадим Викторович`;
+  age = 24;
+  phone = `+380999999999`;
 
   share() {
     window.alert('The product has been shared!');
