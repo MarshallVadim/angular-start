@@ -1,4 +1,12 @@
+h1{
+  font-family: 'Gayathri', sans-serif;
+}
 
+
+
+h1:hover{
+  color: black;
+}
 
 /*
 Copyright Google LLC. All Rights Reserved.
